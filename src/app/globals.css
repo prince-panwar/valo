@@ -1,0 +1,331 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/a.jpg");
+  position: absolute;
+}
+.Button-box {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #0e1010;
+}
+.form-box {
+  width: 450px;
+  height: 600px;
+  background-color: rgba(214, 207, 231, 0.315);
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 5px;
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  transition: 1s;
+  transition: 0.3 ease;
+  color: 0.3s ease;
+  border-radius: 2px;
+}
+.toggle-btn2 {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px;
+  outline: none;
+  position: relative;
+  transition: 1s;
+  color: 0.3s ease;
+  border-radius: 2px;
+}
+.ugiform {
+  float: left;
+}
+#form-ugi {
+  left: 10%;
+  float: left;
+  margin-left: 20px;
+}
+#form-non-ugi {
+  left: 15%;
+  float: right;
+  margin-right: 20px;
+}
+#form-non-ugi.toggle-btn2.active {
+  background-color: rgb(84, 8, 8);
+}
+.form-box {
+  width: 450px;
+  height: 600px;
+  background-color: rgba(214, 207, 231, 0.315);
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 5px;
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.Button-box {
+  border: 2px solid;
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 3px #0e1010;
+  border-radius: 35px;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  transition: 1s;
+  transition: 0.3 ease;
+  color: 0.3s ease;
+  border-radius: 2px;
+}
+.toggle-btn2 {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px;
+  outline: none;
+  position: relative;
+  transition: 1s;
+  color: 0.3s ease;
+  border-radius: 2px;
+}
+.ugiform {
+  float: left;
+}
+.team-name {
+  width: 70%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid;
+  background: transparent;
+  outline: none;
+  height: 20px;
+}
+.team-name input {
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  background: transparent;
+  padding-left: 20%;
+}
+.college {
+  width: 70%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid;
+  background: transparent;
+  outline: none;
+  height: 20px;
+}
+.college input {
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  background: transparent;
+  padding-left: 20%;
+}
+.game {
+  width: 70%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid;
+  background: transparent;
+  outline: none;
+  height: 20px;
+}
+.game input {
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  background: transparent;
+  padding-left: 20%;
+}
+.select-player {
+  width: 70%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid;
+  background: transparent;
+  outline: none;
+  height: 20px;
+}
+.select-player input {
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  background: transparent;
+  padding-left: 20%;
+}
+.phone {
+  width: 70%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid;
+  background: transparent;
+  outline: none;
+  height: 20px;
+}
+.phone input {
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  background: transparent;
+  padding-left: 20%;
+}
+.email {
+  width: 70%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid;
+  background: transparent;
+  outline: none;
+  height: 20px;
+}
+.email input {
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  background: transparent;
+  padding-left: 20%;
+}
+.paynow {
+  width: 70%;
+  padding: 10px 0;
+  margin: 10px 0;
+  border: 0;
+  outline: none;
+  background: #7b0909;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.paynow:hover {
+  background: #333;
+}
+.member1 {
+  width: 70%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid;
+  background: transparent;
+  outline: none;
+  height: 20px;
+}
+.member1 input {
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  background: transparent;
+  padding-left: 20%;
+}
+.member2,
+.member3,
+.member4,
+.member5 {
+  width: 70%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid;
+  background: transparent;
+  outline: none;
+  height: 20px;
+}
+.member2 input,
+.member3 input,
+.member4 input,
+.member5 input {
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #000000;
+  background: transparent;
+  padding-left: 20%;
+}
