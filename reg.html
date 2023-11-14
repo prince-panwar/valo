@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register To Valorise</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script>
+        function showPlayerType(playerType) {
+            if (playerType === 'single') {
+                document.getElementById("player-multi-ugi").style.display = "none";
+                document.getElementById("player-single-ugi").style.display = "block";
+            } else if (playerType === 'multi') {
+                document.getElementById("player-single-ugi").style.display = "none";
+                document.getElementById("player-multi-ugi").style.display = "block";
+            }
+        }
+    </script>
+
+<script>
+    function showPlayerTypeNonUGI(playerType) {
+        if (playerType === 'single') {
+            document.getElementById("player-multi-non-ugi").style.display = "none";
+            document.getElementById("player-single-non-ugi").style.display = "block";
+        } else if (playerType === 'multi') {
+            document.getElementById("player-single-non-ugi").style.display = "none";
+            document.getElementById("player-multi-non-ugi").style.display = "block";
+        }
+    }
+</script>
+
+    
+    
+<script>
+    function showUgi() {
+        document.getElementById("form-ugi").style.display = "block";
+        document.getElementById("form-non-ugi").style.display = "none";
+        document.getElementById("ugibtn").style.backgroundColor = "#7b0909";
+        document.getElementById("non-ugi-btn").style.backgroundColor = "transparent";
+    }
+
+    function showNonUgi() {
+        document.getElementById("form-ugi").style.display = "none";
+        document.getElementById("form-non-ugi").style.display = "block";
+        document.getElementById("non-ugi-btn").style.backgroundColor = "#7b0909";
+        document.getElementById("ugibtn").style.backgroundColor = "transparent";
+    }
+</script>
+
+</head>
+<body >
+    <p style="background-image: url('back.png');"></p>
+    <div class="container">
+        <div class="form-box">
+            <div class="Button-box">
+                <div id="ugibtn"></div>
+                <button type="button" class="toggle-btn" onclick="showUgi()">Ugi</button>
+                <button type="button" class="toggle-btn2" onclick="showNonUgi()">Non-Ugi</button>
+            </div>
+
+            <div class="social">
+                <img src="fb.png">
+                <img src="insta.png">
+                <img src="linked.png">
+            </div>
+
+            <form class="ugiform" id="form-ugi" style="display: none;">
+                
+                <input type="text" class="team-name" placeholder="enter team name" required>
+                <span class="fas fa-user"></span><br>
+                
+                <select name="Select College"  class="college" id="College">
+                    <option value="ucer">United College Of engineering and Research</option>
+                    <option value="uit">United institute Of Technology</option>
+                    <option value="uim">United institute of Management</option>
+                    <option value="uip">United institute of Pharmecy</option>
+                  </select><br>
+                  <div class="form-section">
+                    <h2>Game Selection</h2>
+                    <label for="game">Choose Game:</label><br>
+                    <input type="radio" id="valorant" name="game" value="valorant">
+                    <label for="valorant">Valorant</label>
+                    <input type="radio" id="bgmi" name="game" value="bgmi">
+                    <label for="bgmi">BGMI</label>
+                </div>
+                <div id="player-type-ugi" class="select-player">
+                    <h2>Select player</h2>
+                    <input type="radio" id="single-player-ugi" name="playerTypeUGI" value="single" onclick="showPlayerType('single')">
+                    <label for="single-player-ugi">Single</label>
+                    <input type="radio" id="multi-player-ugi" name="playerTypeUGI" value="multi" onclick="showPlayerType('multi')">
+                    <label for="multi-player-ugi">Multiplayer</label>
+                </div>
+                <p>Select player</p>
+                
+                
+                <div id="player-single-ugi" style="display: none;">
+                    
+                    <label>Enter member's name</label><br>
+                    <input type="text" class="member1" placeholder="enter member" required><br>
+                </div>
+                
+                <div id="player-multi-ugi" style="display: none;">
+                    
+                    <label>Enter member's names</label><br>
+                    <input type="text" class="member1" placeholder="enter first member" required><br>
+                    <input type="text" class="member2" placeholder="enter Second member"><br>
+                    <input type="text" class="member3" placeholder="enter Third member"><br>
+                    <input type="text" class="member4" placeholder="enter Fourth member"><br>
+                    <input type="text" class="member5" placeholder="enter Fifth member"><br>
+                </div>
+                
+              
+                <input type="text" class="phone" placeholder="enter phone number" required><br>
+                <input type="text" class="email" placeholder="enter email" required><br>
+                <button type="submit" class="paynow">Pay Now</button>
+            </form>
+
+            <form class="ugiform" id="form-non-ugi" style="display: none;">
+             
+                <input type="text" class="team-name" placeholder="enter team name" required><br>
+                <input type="text" class="team-name" placeholder="enter college name" required><br>
+                
+                  <div class="form-section">
+                    <h2>Game Selection</h2>
+                    <label for="game">Choose Game:</label>
+                    <input type="radio" id="valorant" name="game" value="valorant">
+                    <label for="valorant">Valorant</label>
+                    
+                </div>
+                <div id="player-type-non-ugi">
+                    <p>Select player</p>
+                        <input type="radio" id="single-player-non-ugi" name="playerTypeNonUGI" value="single" onclick="showPlayerTypeNonUGI('single')">
+                        <label for="single-player-non-ugi">Single</label>
+                        <input type="radio" id="multi-player-non-ugi" name="playerTypeNonUGI" value="multi" onclick="showPlayerTypeNonUGI('multi')">
+                        <label for="multi-player-non-ugi">Multiplayer</label>
+                </div>
+                 
+                
+                <div id="player-single-non-ugi" style="display: none;">
+                
+                    <label>Enter member's name</label><br>
+                    <input type="text" class="member1" placeholder="enter member" required><br>
+                </div>
+                
+                <div id="player-multi-non-ugi" style="display: none;">
+                   
+                    <label>Enter member's names</label><br>
+                    <input type="text" class="member1" placeholder="enter first member" required><br>
+                    <input type="text" class="member2" placeholder="enter Second member"><br>
+                    <input type="text" class="member3" placeholder="enter Third member"><br>
+                    <input type="text" class="member4" placeholder="enter Fourth member"><br>
+                    <input type="text" class="member5" placeholder="enter Fifth member"><br>
+                </div>
+                
+
+                <input type="text" class="phone" placeholder="enter phone number" required><br>
+                <input type="email" class="email" placeholder="enter email" required><br>
+                <button type="submit" class="paynow">Pay Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
