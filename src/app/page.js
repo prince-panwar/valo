@@ -23,8 +23,6 @@ const handleSubmit = (e) => {
  
   return (
     <>
-
-    <p class="font-bold">This text is bold</p>
      <div className="container mx-auto bg-black  text-white flex flex-col items-center justify-center min-h-screen">
       <div className="form-box w-3/4 bg-white  text-black p-4 rounded-lg">
         <div className="Button-box flex justify-between my-4">
@@ -33,10 +31,10 @@ const handleSubmit = (e) => {
 
         </div>
 
-        <div className="social flex justify-between mb-4">
-          <FaFacebook className="text-black"/>
-          <FaInstagram className="text-black"/>
-          <FaLinkedin className="text-black"/>
+        <div className="social flex justify-center mb-4">
+          <FaFacebook className="text-black ml-3"/>
+          <FaInstagram className="text-black ml-3"/>
+          <FaLinkedin className="text-black ml-3"/>
         </div>
 
         <form className="text-black" onSubmit={handleSubmit}>
